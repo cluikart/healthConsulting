@@ -2,32 +2,377 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+body, html {
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.contact {
+  width: 500px;
+  height: 500px;
+  background-color: black;
+}
+
+/* Main Navigation */
+.navbar {
+  box-shadow: 0px 8px 0px rgba(0,75,181, 1), 0px 12px 1px rgba(0,0,0,0.4);
+  position: fixed;
+  top: 0px;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.nav-link-home {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 15pt;
+  font-weight: 400;
+  outline: none;
+  
+}
+
+.nav-link-home:hover {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+}
+
+/* Home Page */
+.home-header {
+  background-color: aqua;
+  height: 430px;
+  margin: 0%;
+  padding: 0;
+  
+}
+
+.home-title {
+  
+  height: 100px;
+  align-self: center;
+}
+
+.home-title-text {
+  color: white;
+  font-size: 50pt;
+}
+
+.home-value {
+  height: auto;
+  padding: 10px;
+  text-align: center;
+
+}
+
+.home-value-icon {
+  width: auto;
+  background-color: aqua;
+}
+
+
+
+.home-heart-icon {
+  filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.5));
+  -webkit-filter: drop-shadow(0px 5px 0px rgba(0,0,0,0.5));
+  text-align: center;
+  transition: filter 1s;
+}
+
+.home-heart-icon:hover {
+  filter: drop-shadow(0px 5px 10px rgba(0,0,0,0.5));
+}
+
+
+/* About Page */
+.about-our {
+  padding: 10px;
+  height: auto;
+}
+
+.about-people-row {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 30px;
+}
+
+.about-people-col {
+  border: solid rgba(0,0,0,0.2);
+  border-width: 1px;
+  height: 250px;
+  margin: 10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+  transition: box-shadow 0.5s;
+}
+
+.about-people-col:hover {
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
+}
+
+.about-people-col:hover  .about-people-name{
+  color: #036bfc;
+}
+
+
+/* Contact Page */
+
+.contact-header {
+  justify-content: left;
+  height: 100vh;
+  align-content: center;
+  
+}
+
+.contact-email-label {
+  color: white;
+  font-weight: 600;
+  font-size: 17pt;
+}
+
+.contact-media-icon {
+  width: 50px;
+  height: 50px;
+  filter: drop-shadow( 3px 3px 3px rgba(0,0,0,0.5));
+  transition: transform 0.5s;
+}
+
+.contact-media-icon:hover {
+  transform: scale(1.1);
+}
+
+.contact-col {
+  margin-top: 30px;
+}
+
+/* Agent Login Form */
+
+.login-row {
+  height: 100vh;
+  justify-content: center;
+  align-content: center;
+}
+
+.login-col {
+  
+}
+
+.login-form {
+  border: solid rgba(0,0,0,0.2);
+  border-width: 1px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+  padding: 10px;
+}
+
+.portal-wrapper {
+  /* width: 100vw;
+  height: 100vh;
+  background-color: #F3F3F3; */
+  
+}
+
+/* Agent Portal Navigation */
+
+.agent-nav {
+  position: fixed;
+  left: 10vw;
+  top: 40vh;
+  width: 10vw;
+  height: 300px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: solid rgba(0,0,0,0.2);
+  border-width: 1px;
+  background-color: #036bfc;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+  justify-content: center;
+  
+  
+}
+
+.agent-nav-title {
+  position: absolute;
+  top: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  color: white;
+  font-weight: 500;
+  border-bottom: solid rgba(255, 255, 255, 0.5);
+  border-width: 1px;
+  background-color: rgba(0,0,0,0.1);
+}
+
+.agent-nav-link {
+  color:white;
+  padding-bottom: 10px;
+  color: rgba(255, 255, 255, 0.5);
+
+}
+
+.agent-nav-link:hover {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+
+.agent-nav-row {
+  background-color: rgba(0,0,0,0.2);
+  height: 400px;
+  justify-content: center;
+  align-content: center;
+}
+
+/* Agent Portal */
+
+.agent-portal-row {
+  height: 100px;
+  margin-top: 80px;
+  border-bottom: solid rgba(0,0,0,0.1);
+  border-width: 1px;
+  justify-content: center;
+  align-content: center;
+}
+
+.agent-portal-header-row {
+  height: 100px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.agent-portal-col {
+  /* background-color: #036bfc; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.agent-portal-header-col{
+  background-color: #036bfc;
+}
+
+/* Agent Portal Account Page */
+
+.agent-account-row {
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 10px;
+}
+
+.agent-account-col {
+  border: solid rgba(0,0,0,0.1);
+  border-width: 1px;
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.2), -1px 1px 1px rgba(0,0,0,0.2);
+  transition: transform 1s;
+}
+
+/* .agent-account-col:hover{
+  transform: scaleX(1.5);
+} */
+
+
+
+.manage {
+  /* background-color: aqua; */
+}
+
+.agent-account-col-manage {
+  background-color: white;
+  height: 200px;
+  padding: 0;
+  margin: 0;
+}
+
+.agent-subheader {
+  /* width: 100%; */
+  padding: 10px;
+  /* background-color: green; */
+  background-color: rgba(0,0,0,0.005);
+  border-bottom: solid rgba(0,0,0,0.2);
+  border-width: 1px;
+  transition: transform 1s;
+}
+
+.agent-account-col:hover .agent-subheader{
+  color: #036bfc;
+} 
+
+/* .agent-account-col:hover * {
+  transform: scaleX(0.667);
+
+} */
+
+.quote-row{
+  height: 100vh;
+  /* background-color: aqua; */
+  align-content: center;
+  justify-content: center;
+}
+
+.card-style {
+  border: solid rgba(0,0,0,0.2);
+  border-width: 1px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+  padding: 10px;
+}
+
+.card-style-bevel {
+  border: solid rgba(0,0,0,0.1);
+  border-width: 1px;
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.2), -1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.blog-header-row {
+  height: 100px;
+  justify-content: center;
+  align-content: center;
+  /* background-color: aqua; */
+  margin-top: 75px;
+}
+
+.blog-list-row {
+  height: 220px;
+  /* background-color: #036bfc; */
+  justify-content: center;
+}
+
+.blog-list-col {
+  background-color: white;
+  height: 100%;
+  text-align: left;
+  margin: 0;
+  
+}
+
+.blog-list-title {
+  width: 50%;
+  border-bottom: solid rgba(0,0,0,0.1);
+  border-width: 1px;
+}
+
+.blog-list-col:hover .blog-list-title{
+  color: #036bfc;
+}
+
+.blog-list-author {
+  color: rgba(0,0,0,0.5);
+}
+
+.blog-list-author-wrapper {
+  /* background-color: gray; */
+  width: 50%;
+  text-align: right;
+  text-align: end;
+}
+
+.blog-list-title-wrapper {
+  display: flex;
+}
+
+.blog-list-date {
+  color: rgba(0,0,0,0.5);
+}
+
+
+
+
+
+@media only screen and (min-width: 961px) {
+
+  .blog-list-row{
+    height: 150px;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
 }
